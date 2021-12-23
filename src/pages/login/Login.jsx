@@ -55,7 +55,6 @@ export default function Login() {
                 Create your Account
               </button>
             </Link>
-            <span className="forgot">Forgot password?</span>
           </form>
         </div>
       </div>
