@@ -102,7 +102,9 @@ export default function Feed({ username }) {
         }
         fetchPosts()
     }, [username, user._id])
-
+    const reload = ()=>{
+        window.location.reload();
+      }
 
     return (
 
@@ -153,6 +155,8 @@ export default function Feed({ username }) {
                     </ul>
                     <br></br><br></br>
                     <hr></hr> 
+                    <br></br>
+                    <span className="reload" onClick={reload} >Back to all post</span> 
                 </div>
             </div>
             {/* <div className="timeline"> */}
